@@ -1,0 +1,4 @@
+log/*.log
+logs/*.log
+ssl_certs/*
+!ssl_certs/.keep

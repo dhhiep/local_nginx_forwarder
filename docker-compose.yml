@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 443:443
+    volumes:
+      - ./log:/var/log/nginx/
+      - ./ssl_certs:/etc/nginx/ssl_certs/
+      - ./config:/etc/nginx/conf.d
